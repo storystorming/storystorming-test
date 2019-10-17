@@ -560,21 +560,44 @@ pre code {
   margin-left: auto;
 }
 
+  #services {
+   display:none;
+  }
+
+  #servicesmobile {
+   display:block;
+  }
+  
+  .more_mobile_margin_top {
+    margin-top:30px;
+  }
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
 }
 
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+  }
+  #services {
+   display:block;
+  }
+
+  #servicesmobile {
+   display:none;
   }
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+  .more_mobile_margin_top {
+    margin-top:0px;
   }
 }
 
@@ -6418,8 +6441,12 @@ button.bg-dark:focus {
   content: "";
 }
 
-.d-none {
-  display: none !important;
+.d-none h2 {
+  font-size: 1.5em;
+}
+
+.d-none p {
+  font-size: 1em;
 }
 
 .d-inline {
@@ -9752,16 +9779,29 @@ header.masthead h1 {
 }
 
 .bg-general {
-	padding: 70px 0px 70px 0px;
+	padding: 10px 0px 70px 0px;
+}
+
+.bg-about {
+	padding: 0px 0px 0px 0px;
+	background-color: #212529;
 }
 
 .bg-map {
-	padding: 20px 0px 70px 0px;
+	padding: 10px 0px 70px 0px;
 	background-color: #212529;
 }
 
 .bg-voices {
-	padding: 40px 0px 0px 0px;
+	padding: 10px 0px 60px 0px;
+}
+
+.bg-trainings {
+	padding: 10px 0px 0px 0px;
+}
+
+.bg-schief {
+	padding: 0px 0px 0px 0px;
 }
 
 .carousel-item {
